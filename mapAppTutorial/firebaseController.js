@@ -6,8 +6,17 @@ locationsRef.on('value', function(snapshot) {
     updateLocations();
 });
 
-function snapshotToArray(snapshot){
-    var locationArray = [];
+function writeUserLocationData(userTitle, userInfo, lat, lon){
+    firebase.database().ref('locationData/' + userTitle).set({
+        title: userTitle,
+        content: userInfo,
+        latitude: lat,
+        longitude: lon
+    });
+}
+
+function snapshotToArray(snapshot) {
+    var locationArray = []; //so we avoid having locationsDataArray get pushed old items
     snapshot.forEach(function(childSnapshot){
         var item = childSnapshot.val();
         locationArray.push(item);
