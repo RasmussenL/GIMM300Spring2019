@@ -1,0 +1,8 @@
+{
+  "name": "MondayMapApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "db222ba8"
+}
