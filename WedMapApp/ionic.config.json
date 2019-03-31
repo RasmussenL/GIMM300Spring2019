@@ -1,0 +1,8 @@
+{
+  "name": "WedMapApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "1dfd7166"
+}

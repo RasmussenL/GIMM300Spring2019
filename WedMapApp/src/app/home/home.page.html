@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Map
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/pages/login"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button size="large" (click)="getGeolocation()">Get Location</ion-button>
+  <div #map id="map"></div>
+</ion-content>
